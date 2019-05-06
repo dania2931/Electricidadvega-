@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> CIRCUITOS ELECTRICOS </title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			background-color: #db63c7bf !important;
+		}
+
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: auto;
+			text-align: center;
+			font-family: arial;
+			background-color: white;
+			border-radius: 35px;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.title {
+			color: grey;
+			font-size: 18px;
+		}
+
+		button {
+			border: none;
+			outline: 0;
+			display: inline-block;
+			padding: 8px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 22px;
+			color: black;
+		}
+
+
+		a:hover {
+			opacity: 0.7;
+			color: red;
+		}
+
+		.contenido {
+			background-color: white;
+			padding: 20px;
+			border-radius: 35px;
+			box-shadow: 5px 10px #888888;
+		}
+
+		.example1 {
+			height: 50px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.example1 h1 {
+			font-size: 18px;
+			color: rgb(205, 50, 153);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			line-height: 50px;
+			text-align: center;
+			/* Starting position */
+			-moz-transform: translateX(100%);
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+			/* Apply animation to this element */
+			-moz-animation: example1 15s linear infinite;
+			-webkit-animation: example1 15s linear infinite;
+			animation: example1 7s linear infinite;
+		}
+
+		/* Move it (define the animation) */
+		@-moz-keyframes example1 {
+			0% {
+				-moz-transform: translateX(100%);
+			}
+
+			100% {
+				-moz-transform: translateX(-100%);
+			}
+		}
+
+		@-webkit-keyframes example1 {
+			0% {
+				-webkit-transform: translateX(100%);
+			}
+
+			100% {
+				-webkit-transform: translateX(-100%);
+			}
+		}
+
+		@keyframes example1 {
+			0% {
+				-moz-transform: translateX(100%);
+				/* Firefox bug fix */
+				-webkit-transform: translateX(100%);
+				/* Firefox bug fix */
+				transform: translateX(100%);
+			}
+
+			100% {
+				-moz-transform: translateX(-100%);
+				/* Firefox bug fix */
+				-webkit-transform: translateX(-100%);
+				/* Firefox bug fix */
+				transform: translateX(-100%);
+			}
+		}
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Circuitos Eléctricos</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#perfil">Perfil</a></li>
+					<li><a href="#titulo">Contenido</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="card" id="perfil">
+			<img src="girl.png" alt="Avatar" style="width:100%; margin-top: 30px">
+			<div class="info">
+				<div class="example1">
+					<h1>Dania Vega Clavijo</h1>
+				</div>
+				<p class="title">Estudiante</p>
+				<p>Colegio la Salle</p>
+				<p>Grado 11A</p>
+				<p>Informática</p>
+			</div>
+		</div>
+		<br />
+		<br />
+
+		<div class="contenido">
+			<h1 id="titulo">Cirtuitos Eléctricos</h1>
+
+			<h3>Contenidos</h3>
+			<hr>
+			<ul>
+				<li><a href="#1">¿Qué es un Circuito?</a></li>
+				<li><a href="#2">Elementos de los Circuitos</a></li>
+				<li><a href="#3">Simbología de los Circuitos</a></li>
+				<li><a href="#4">Tipos de Circuitos</a></li>
+				<li><a href="#5">Magnitudes de un Circuito</a></li>
+				<li><a href="#6">Ley de OHM</a></li>
+			</ul>
+
+			<hr>
+			<div class="panel panel-danger" id="1">
+				<div class="panel-heading">
+					<h3 class="panel-title">¿Qué es un Circuito?</h3>
+				</div>
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Circuito.jpg"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading">Un Circuito</h4>
+							<p>Cuando un cuerpo está cargado negativamente y el otro está cargado positivamente, se
+								dice
+								que entre ellos hay una diferencia de cargas. Cuando conectamos mediante un elemento
+								conductor dos puntos con una diferencia de cargas eléctricas, los electrones
+								circularán
+								provocando la corriente eléctrica.</br></br>
+
+								Una vez conectados, los electrones en exceso de uno, serán atraídos a través del
+								conductor (que permite el paso de electrones) hacia el elemento que tiene un defecto
+								de
+								electrones, hasta que las cargas eléctricas de los dos cuerpos se
+								equilibren.</br></br>
+
+								Esta diferencia de cargas la podemos encontrar, por ejemplo, en una pila, que tiene
+								dos
+								puntos con diferencias de cargas (el polo positivo y el polo negativo). Si
+								conectamos un
+								cable conductor entre los polos, se establecerá una corriente eléctrica. Cuanto
+								mayor
+								sea la diferencia de carga (o tensión eléctrica), con más fuerza recorrerán los
+								electrones el conductor.</br></br>
+
+								<b><i><u>Es un recorrido cerrado cuyo fin es llevar energía eléctrica desde unos
+											elementos
+											que la producen hasta unos elementos que la consumen.</b></i></u></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="panel panel-danger" id="2">
+				<div class="panel-heading">
+					<h3 class="panel-title">Elementos de los circuitos</h3>
+				</div>
+				<div class="panel-body">
+					<h4>Un circuito consta de 5 elementos fundamentales</h4>
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Pila.jpg"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Elementos Generadores</b></h4>
+							<p>Son los que proporcionan energía al circuito, generando la diferencia de carga
+								eléctrica.
+								Ejemplo: Pilas, baterías, alternadores.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="Bateria.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Cables.jpg"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Elementos Conductores</b></h4>
+							<p>Es el medio por el que circula la corriente en un circuito. Está formado por un
+								material
+								conductor o un material que oponga poca resistencia al paso de la corriente.
+								Ejemplo:
+								Cables de cobre, protoboard, placas de circuitos impresos.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="Protoboard.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Bombillo.jpg"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Elementos Receptores</b></h4>
+							<p>Son los que producen algún efecto tras el paso de la corriente, transformando la
+								energía
+								eléctrica en energía útil. Ejemplo: Bombillo, motor, altavoz.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="Altavoz.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object"
+									src="Interruptor.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Elementos de Control y Maniobra</b></h4>
+							<p>Son componentes que permite abrir o cerrar un circuito eléctrico. Ejemplo: Los
+								interruptores.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="Interruptor1.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Fusible.jpg"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Elementos de Protección</b></h4>
+							<p>Son los encargados de preservar al circuito en caso de alguna sobrecarga. Ejemplo:
+								Fusible, polo a tierra.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="Polo.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<div class="panel panel-danger" id="3">
+				<div class="panel-heading">
+					<h3 class="panel-title">Simbología de los circuitos</h3>
+				</div>
+				<div class="panel-body" style="text-align:center">
+					<p>La siguiente tabla muestra la simbología para realizar esquemas de circuitos eléctricos:</br>
+						<img src="../Pagina Web/simbología.jpg" alt="Simbología"></p>
+				</div>
+			</div>
+
+
+			<div class="panel panel-danger" id="4">
+				<div class="panel-heading">
+					<h3 class="panel-title">Tipos de circuitos</h3>
+				</div>
+				<div class="panel-body">
+					<h4>Existen diferentes tipos de circuitos, depende de la manera en que se conectan sus
+						componentes,
+						los cuales pueden ser</h4>
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object"
+									src="CircuitoSimple.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Circuito Simple</b></h4>
+							<p>Es el que consta de un solo elemento receptor.</p>
+
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="CircuitoSimple1.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object"
+									src="CircuitoSerie.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Circuito Serie</b></h4>
+							<p>Los componentes están conectados de modo que las cargas eléctricas circulen por un
+								solo trayecto. La corriente es la misma en cada elemento receptor.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="CircuitoSerie1.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object"
+									src="CircuitoParalelo.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Circuito Paralelo</b></h4>
+							<p>Los componentes están conectados de modo que se presenta más de un camino para el
+								paso de las cargas eléctricas. El voltaje es el mismo en cada elemento receptor.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="CircuitoParalelo1.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object"
+									src="CircuitoMixto.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading"><b>Circuito Mixto</b></h4>
+							<p>Es la combinación de serie y paralelo, por lo tanto las cargas van a circular por
+								uno o varios trayectos.</p>
+						</div>
+						<div class="media-right"> <a href="#"> <img alt="64x64" class="media-object"
+									data-src="holder.js/64x64" src="CircuitoMixto1.jpg" data-holder-rendered="true"
+									style="width: 150px; height: 150px;"> </a> </div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="panel panel-danger" id="5">
+				<div class="panel-heading">
+					<h3 class="panel-title">Magnitudes de un circuito</h3>
+				</div>
+				<div class="panel-body">
+					<h4>Las magnitudes que esencialmente rigen el comportamiento de los circuitos son esencialmente
+						tres</h4>
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Voltaje.png"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading">Diferencia de potencial</h4>
+							<p>La tensión eléctrica vAB en un punto A respecto a otro punto B es el
+								trabajo por unidad de carga que hay que realizar para trasladar una carga de B a A.
+							</p>
+
+						</div>
+					</div>
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Amperaje.jpg"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading">Intensidad de corriente</h4>
+							<p>Es la carga eléctrica que pasa por unidad de tiempo a través de una
+								sección.</p>
+
+						</div>
+					</div>
+
+
+					<div class="media">
+						<div class="media-left"> <a href="#"> <img alt="64x64" class="media-object" src="Ohmio.gif"
+									data-holder-rendered="true" style="width: 150px; height: 150px;"> </a> </div>
+						<div class="media-body">
+							<h4 class="media-heading">Resistencia</h4>
+							<p>Es toda oposición que encuentra la corriente a su paso por un circuito eléctrico
+								cerrado, atenuando o frenando el libre flujo de circulación de las cargas eléctricas
+								o
+								electrones.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="panel panel-danger" id="6">
+				<div class="panel-heading">
+					<h3 class="panel-title">Ley de OHM</h3>
+				</div>
+				<div class="panel-body" style="text-align:center">
+					<p>La ley de Ohm dice que: "la intensidad de la corriente eléctrica que circula por un conductor
+						eléctrico es directamente proporcional a la diferencia de potencial aplicada e inversamente
+						proporcional a la resistencia del mismo".</br>
+						<img src="../Pagina Web/Ley.jpg" alt="LeydeOHM"></br>
+						En el Sistema internacional de unidades:</br>
+						<b>I =</b> Intensidad en amperios (A)</br>
+						<b>V =</b> Diferencia de potencial en voltios (V)</br>
+						<b>R = </b>Resistencia en ohmios (Ω)</p>
+				</div>
+			</div>
+
+
+
+
+			<br><br><br>
+
+
+
+
+
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>
